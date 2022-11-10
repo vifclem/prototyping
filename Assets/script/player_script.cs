@@ -37,6 +37,7 @@ public class player_script : MonoBehaviour
         {
             rb.AddForce(Vector3.up * JumpForce, ForceMode.Impulse);
             isGrounded2 = false;
+
         }
     }
 
@@ -44,8 +45,12 @@ public class player_script : MonoBehaviour
     {
         isGrounded=true;
         isGrounded2 = true;
+        if (collision.gameObject.tag == "terrain")
+        {
+            transform.position = new Vector3(-140, 35, -4);
+            
+        }
     }
 }
-
 
 
