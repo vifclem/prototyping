@@ -23,7 +23,7 @@ public class player_script : MonoBehaviour
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             transform.position += new Vector3(Speed * Time.deltaTime, 0, 0);
-        }
+        }       
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             transform.position += new Vector3(-Speed * Time.deltaTime, 0, 0);
